@@ -1,10 +1,13 @@
+package get_request;
+
+import base_Urls.JsonplaceholderBaseUrls;
 import io.restassured.response.Response;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.CoreMatchers.*;
 
-public class Get03 extends BaseUrls{
+public class Get03 extends JsonplaceholderBaseUrls {
 
       /*
       Given
