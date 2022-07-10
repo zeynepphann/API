@@ -24,7 +24,7 @@ public class Get01 {
          ->Set the URL
          ->Set the expected data(POT-PUT-PATCH)
          ->Type code to send request
-         ->Da Assertion
+         ->Da Assertion (Dogrulama)
 
      */
 
@@ -51,6 +51,7 @@ public class Get01 {
         // ->Set the expected data(POT-PUT-PATCH)
 
         // ->Type code to send request
+        // get request yapmak icin asagidaki given kismini yapiyoruz
         Response response =given().when().get(url);
 
         response.prettyPrint();

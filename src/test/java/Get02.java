@@ -25,14 +25,14 @@ public class Get02 {
         //1. Step; Set theUrl
         String url= "https://restful-booker.herokuapp.com/booking/10001";
 
-        //2. Step; Set the expected data (Post -Put -Patch)
+        //2. Step; Set the expected data (Post -Put -Patch) body'e ihtiyac var
 
         //3.Step; Type code to send  request
         Response response =given().when().get(url);
         response.prettyPrint();
 
         //4. Do Assertions
-        // assertTaht kiyasla, oldugunu kontrol et
+        // assertThat kiyasla, oldugunu kontrol et
         response.then().assertThat()
                 .statusCode(404)
                 .statusLine("HTTP/1.1 404 Not Found");
