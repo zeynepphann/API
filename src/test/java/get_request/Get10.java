@@ -1,6 +1,16 @@
 package get_request;
 
-public class Get10 {
+import base_Urls.GoRestBaseUrl;
+import io.restassured.response.Response;
+import org.junit.Test;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import static io.restassured.RestAssured.*;
+import static org.junit.Assert.assertEquals;
+
+public class Get10 extends GoRestBaseUrl {
      /*
         Given
             https://gorest.co.in/public/v1/users/2986
